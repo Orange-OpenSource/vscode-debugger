@@ -23,11 +23,19 @@ export function activate(context: vscode.ExtensionContext) {
           const range = document.lineAt(lineOfSelectedVar).range;
           editBuilder.replace(range, newText);
         } else {
-          // Insert 'debugger;' at the beginning of the line
-          editBuilder.insert(
-            new vscode.Position(lineOfSelectedVar, 0),
-            "debugger; "
-          );
+          // If the line is not empty, insert 'debugger;' at the start
+          if (lineText.trim().length > 0) {
+            editBuilder.insert(
+              new vscode.Position(lineOfSelectedVar, 0),
+              "debugger;\n"
+            );
+          } else {
+            // If the line is empty, insert 'debugger;'
+            editBuilder.insert(
+              new vscode.Position(lineOfSelectedVar, 0),
+              "debugger; "
+            );
+          }
         }
       });
     }

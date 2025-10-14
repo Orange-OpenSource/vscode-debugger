@@ -3,6 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.activate = activate;
 exports.deactivate = deactivate;
 const vscode = require("vscode");
+/**
+ * Activate the extension
+ */
 function activate(context) {
     let disposable = vscode.commands.registerCommand("vscodedebugger.debugger", () => {
         const editor = vscode.window.activeTextEditor;
@@ -21,12 +24,21 @@ function activate(context) {
                 editBuilder.replace(range, newText);
             }
             else {
-                // Insert 'debugger;' at the beginning of the line
-                editBuilder.insert(new vscode.Position(lineOfSelectedVar, 0), "debugger; ");
+                // Si la ligne contient déjà du code (hors espaces), insérer 'debugger;' sur une nouvelle ligne avant
+                if (lineText.trim().length > 0) {
+                    editBuilder.insert(new vscode.Position(lineOfSelectedVar, 0), "debugger;\n");
+                }
+                else {
+                    // Sinon, insérer 'debugger;' au début de la ligne
+                    editBuilder.insert(new vscode.Position(lineOfSelectedVar, 0), "debugger; ");
+                }
             }
         });
     });
     context.subscriptions.push(disposable);
 }
+/**
+ * Deactivate the extension
+ */
 function deactivate() { }
 //# sourceMappingURL=extension.js.map
