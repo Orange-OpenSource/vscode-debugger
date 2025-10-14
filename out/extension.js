@@ -24,12 +24,12 @@ function activate(context) {
                 editBuilder.replace(range, newText);
             }
             else {
-                // Si la ligne contient déjà du code (hors espaces), insérer 'debugger;' sur une nouvelle ligne avant
+                // If the line is not empty, insert 'debugger;' at the start
                 if (lineText.trim().length > 0) {
                     editBuilder.insert(new vscode.Position(lineOfSelectedVar, 0), "debugger;\n");
                 }
                 else {
-                    // Sinon, insérer 'debugger;' au début de la ligne
+                    // If the line is empty, insert 'debugger;'
                     editBuilder.insert(new vscode.Position(lineOfSelectedVar, 0), "debugger; ");
                 }
             }
