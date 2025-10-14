@@ -1,44 +1,49 @@
 {
-	"name": "vscode-debugger",
-	"displayName": "Debugger keyword shortcut for javascript",
-	"description": "Add debugger keyword into js file with one command !",
-	"version": "0.0.5",
-	"icon": "images/icon.png",
-	"publisher": "stephanebouget",
-	"repository": "https://github.com/stephanebouget/vscode-debugger.git",
-	"engines": {
-		"vscode": "^1.34.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:vscodedebugger.debugger"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [{
-			"command": "vscodedebugger.debugger",
-			"title": "debugger"
-		}],
-		"keybindings": [{
-			"command": "vscodedebugger.debugger",
-			"key": "ctrl+alt+d",
-			"mac": "ctrl+alt+d"
-		}]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.37",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
-	}
+  "name": "vscode-debugger",
+  "displayName": "Debugger keyword shortcut for javascript",
+  "description": "Add debugger keyword into js file with one command !",
+  "version": "0.0.5",
+  "icon": "images/icon.png",
+  "publisher": "stephanebouget",
+  "repository": "https://github.com/stephanebouget/vscode-debugger.git",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscodedebugger.debugger"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscodedebugger.debugger",
+        "title": "debugger"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vscodedebugger.debugger",
+        "key": "ctrl+alt+d",
+        "mac": "ctrl+alt+d"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.7.2",
+    "@types/vscode": "^1.105.0",
+    "tslint": "^6.1.3",
+    "typescript": "^5.9.3",
+    "vscode-test": "^1.6.1"
+  }
 }
