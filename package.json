@@ -7,13 +7,10 @@
   "publisher": "stephanebouget",
   "repository": "https://github.com/stephanebouget/vscode-debugger.git",
   "engines": {
-    "vscode": "^1.34.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
-  ],
-  "activationEvents": [
-    "onCommand:vscodedebugger.debugger"
   ],
   "main": "./out/extension.js",
   "contributes": {
