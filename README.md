@@ -3,7 +3,6 @@
    <img src="images/icon.png" alt="Debugger Icon" width="100"/>
 </div>
 <br>
-<br>
 
 # Debugger Keyword Shortcut for JavaScript
 
