@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.0]
+
+- Update icon
+
 ## [1.0.1]
 
 - Added toggle behavior: the shortcut adds or removes `debugger;` on the selected line.

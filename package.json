@@ -2,7 +2,7 @@
   "name": "vscode-debugger",
   "displayName": "Debugger Toggle Shortcut for JavaScript",
   "description": "Quickly add or remove the 'debugger;' statement in your JavaScript or TypeScript files with a single command.",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "icon": "images/icon.png",
   "publisher": "stephanebouget",
   "repository": "https://github.com/stephanebouget/vscode-debugger.git",

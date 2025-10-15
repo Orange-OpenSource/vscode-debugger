@@ -1,3 +1,10 @@
+<br>
+<div align="center">
+   <img src="images/icon.png" alt="Debugger Icon" width="100"/>
+</div>
+<br>
+<br>
+
 # Debugger Keyword Shortcut for JavaScript
 
 Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut.
