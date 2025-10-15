@@ -7,7 +7,16 @@
 
 # Debugger Keyword Shortcut for JavaScript
 
-Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut.
+**Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut.**
+
+## 🛠️ Installation
+
+You can install this extension directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stephanebouget.vscode-debugger):
+
+1. Open the Extensions view in VS Code (`Ctrl+Shift+X`).
+2. Search for `vscode-debugger` or `stephanebouget.vscode-debugger`.
+3. Click **Install**.
+4. Or, visit the [marketplace page](https://marketplace.visualstudio.com/items?itemName=stephanebouget.vscode-debugger) and click **Install**.
 
 ## ✨ Features
 
