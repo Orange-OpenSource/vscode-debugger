@@ -4,7 +4,7 @@
 </div>
 <br>
 
-# Debugger Keyword Shortcut for JavaScript
+# Debugger Keyword Shortcut for JavaScript (js) / Typescript (ts)
 
 **Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut.**
 
