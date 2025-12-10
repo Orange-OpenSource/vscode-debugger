@@ -6,7 +6,9 @@
 
 # Debugger Keyword Shortcut for JavaScript (js) / Typescript (ts)
 
-**Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut.**
+**Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut. (Ctrl+Alt+D)**
+
+![demo](https://github.com/user-attachments/assets/287972b2-473f-49fc-9ef3-2bc5fd1b84ff)
 
 ## 🛠️ Installation
 
