@@ -1,3 +1,14 @@
+/*
+ * Software Name : Vscode-debugger
+ * SPDX-FileCopyrightText: Copyright (c) Orange
+ * SPDX-License-Identifier: MIT
+ *
+ * This software is distributed under the MIT,
+ * see the "LICENSE.txt" file for more details or https://opensource.org/license/mit
+ *
+ * Software description: Easily add or remove the `debugger;` statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut. (Ctrl+Alt+D)
+ */
+
 import * as vscode from "vscode";
 
 /**
@@ -27,18 +38,18 @@ export function activate(context: vscode.ExtensionContext) {
           if (lineText.trim().length > 0) {
             editBuilder.insert(
               new vscode.Position(lineOfSelectedVar, 0),
-              "debugger;\n"
+              "debugger;\n",
             );
           } else {
             // If the line is empty, insert 'debugger;'
             editBuilder.insert(
               new vscode.Position(lineOfSelectedVar, 0),
-              "debugger; "
+              "debugger; ",
             );
           }
         }
       });
-    }
+    },
   );
 
   context.subscriptions.push(disposable);
