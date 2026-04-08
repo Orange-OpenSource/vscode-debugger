@@ -11,5 +11,4 @@
 
 ## [1.0.0]
 
-- Initial release
-- Adds `debugger;` to the selected line with the shortcut.
+- Easily add or remove the debugger; statement in your JavaScript (js) / Typescript (ts) files with a simple shortcut. (Ctrl+Alt+D)
